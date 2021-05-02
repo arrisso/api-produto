@@ -45,4 +45,4 @@ jobs:
           push: true
           tags: |
             risso/api-bootcamp-produto:latest
-            risso/api-bootcamp-produto:${{github.run_number}}
+            risso/api-bootcamp-produto:v${{github.run_number}}
