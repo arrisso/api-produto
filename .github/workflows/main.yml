@@ -73,5 +73,6 @@ jobs:
       - name: Deploy api
         uses: Azure/k8s-deploy@v1.3
         with:
+          Images: risso/api-bootcamp-produto:v${{github.run_number}}
           manifests: |
             k8s/api/deployment.yaml
